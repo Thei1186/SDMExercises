@@ -50,5 +50,30 @@ namespace SDMOpgaver
            }
            return false;
        }
+
+       public double TotalCost(int noOfPassengers, int kilometer)
+       {
+           var initialFee = 130;
+           if (noOfPassengers < 0 || kilometer < 0)
+           {
+               throw new InvalidDataException("The number of passengers or kilometers can't be less than zero");
+           }
+           if (kilometer < 100)
+           {
+               return 3.20 * kilometer + initialFee;
+           }
+           else if (kilometer >= 100 && kilometer < 500 && noOfPassengers < 12)
+           {
+               return 2.75 * kilometer + initialFee;
+           }
+           else if (kilometer >= 100 && kilometer < 500 && noOfPassengers >= 12)
+           {
+               return 3 * kilometer + initialFee;
+           }
+           else
+           {
+               return 2.25 * kilometer + initialFee;
+           }
+       }
     }
 }
