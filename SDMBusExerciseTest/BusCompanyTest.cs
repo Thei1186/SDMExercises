@@ -26,7 +26,6 @@ namespace SDMBusExerciseTest
         //Above 500km
         [InlineData(11, 500, (500 * 2.25 + 130))]
         [InlineData(22, 750, (750 * 2.25 + 130))]
-
         public void TestTotalPrice(int noOfPassengers, int kilometer, double expected)
         {
             Exercise bTest = new Exercise();
