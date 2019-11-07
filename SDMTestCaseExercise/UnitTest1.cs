@@ -17,7 +17,7 @@ namespace SDMTestCaseExercise
             bool result = testMarmotte.IsGoldTime(age,sec);
             Assert.IsTrue(result, "YOU ARE WROOoONG!");
         }
-
+        daidjlk
         [TestMethod]
         public void TestIs18NotGoldTime()
         {
