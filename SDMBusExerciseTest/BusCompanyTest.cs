@@ -33,15 +33,7 @@ namespace SDMBusExerciseTest
             Assert.Equal(expected, totalCost);
         }
 
-        //Above 500km
-        [InlineData(11, 500, (500 * 2.25 + 130))]
-        [InlineData(22, 750, (750 * 2.25 + 130))]
-        public void TestTotalPriceAgain(int noOfPassengers, int kilometer, double expected)
-        {
-            Exercise bTest = new Exercise();
-            var totalCost = bTest.TotalCost(noOfPassengers, kilometer);
-            Assert.Equal(expected, totalCost);
-        }
+
         [Theory]
         [InlineData(11, -1)]
         [InlineData(-1, 100)]
