@@ -36,7 +36,7 @@ namespace SDMBusExerciseTest
         [Theory]
         [InlineData(11, -1)]
         [InlineData(-1, 100)]
-        [InlineData(-1, -1)]
+        [InlineData(1, 1)]
         public void TestIfIncorrectInput(int noOfPassengers, int kilometer)
         {
             Exercise bTest = new Exercise();
