@@ -48,7 +48,7 @@ namespace SDMTestCaseExercise
             int age = 39;
             int sec = 39268;
             bool result = testMarmotte.IsGoldTime(age, sec);
-            Assert.IsFalse(result, "YOU ARE WROOOONG!");
+            Assert.IsTrue(result, "YOU ARE WROOOONG!");
         }
     }
 }
